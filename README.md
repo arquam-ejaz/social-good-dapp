@@ -1,4 +1,4 @@
-Guest Book
+Social Good Dapp
 ==========
 
 [![Build Status](https://travis-ci.com/near-examples/guest-book.svg?branch=master)](https://travis-ci.com/near-examples/guest-book)

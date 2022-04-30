@@ -3,19 +3,12 @@ import React from 'react';
 export default function SignIn() {
   return (
     <>
+      <p><img style={{"width":"50%"}} src={require('../../assets/syrian-refugee.png')}></img></p>
       <p>
-          This app demonstrates a key element of NEAR’s UX: once an app has
-          permission to make calls on behalf of a user (that is, once a user
-          signs in), the app can make calls to the blockchain for them without
-          prompting extra confirmation. So you’ll see that if you don’t
-          include a donation, your message gets posted right to the guest book.
+        Millions have been displaced due to the Syrian civil war and many more have been displaced recently by the relentless bombardment. Displaced families are forced to live in makeshift tents and under trees. You can help such families.
       </p>
       <p>
-          But if you do add a donation, then NEAR will double-check that
-          you’re ok with sending money to this app.
-      </p>
-      <p>
-          Go ahead and sign in to try it out!
+        Log in to donate.
       </p>
     </>
   );

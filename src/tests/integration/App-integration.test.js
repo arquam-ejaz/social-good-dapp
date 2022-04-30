@@ -12,15 +12,15 @@ beforeAll(async function() {
   near = await nearlib.connect(nearConfig);
   accountId = nearConfig.contractName;
   contract = await near.loadContract(nearConfig.contractName, {
-    viewMethods: ['getMessages'],
-    changeMethods: ['addMessage'],
+    viewMethods: ['getDonors'],
+    changeMethods: ['addDonor'],
     sender: accountId
   });
 });
 
 it('send one message and retrieve it', async() => {
-  await contract.addMessage({ text: 'aloha' });
-  const msgs = await contract.getMessages();
+  await contract.addDonor({ text: 'aloha' });
+  const msgs = await contract.getDonors();
   const expectedMessagesResult = [{
     premium: false,
     sender: accountId,
@@ -30,8 +30,8 @@ it('send one message and retrieve it', async() => {
 });
 
 it('send two more messages and expect three total', async() => {
-  await contract.addMessage({ text: 'foo' });
-  await contract.addMessage({ text: 'bar' });
-  const msgs = await contract.getMessages();
+  await contract.addDonor({ text: 'foo' });
+  await contract.addDonor({ text: 'bar' });
+  const msgs = await contract.getDonors();
   expect(msgs.length).toEqual(3);
 });

@@ -45,7 +45,7 @@ Once you've opened the web app in your browser, log in and experiment with the s
 
 The "Save" button sends the text input to the blockchain, storing it as a string. The web app will reload with the new guest book messages automatically.
 
-The "Save & Donate" button demonstrates attaching NEAR and a gas price when calling the smart contract's method `addMessage`. When the web app refreshes with "paid" messages, the user interface highlights them.
+The "Save & Donate" button demonstrates attaching NEAR and a gas price when calling the smart contract's method `addDonor`. When the web app refreshes with "paid" messages, the user interface highlights them.
 
 Data collection
 ===============

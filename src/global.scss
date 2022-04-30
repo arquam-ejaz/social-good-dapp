@@ -3,12 +3,12 @@
 }
 
 html {
-  --bg: #fff;
+  --bg: #Eaf4fc;
   --fg: #25282A;
-  --gray: #888;
+  //--gray: #888;
   --royal: #0072CE;
   --blue: #6AD1E3;
-  --primary: #D1CCBD;
+  --primary: black;
   --secondary: var(--royal);
   --tertiary: #FF585D;
 
@@ -60,16 +60,16 @@ fieldset {
   }
 }
 
-label {
-  color: var(--gray);
-}
+// label {
+//   //color: var(--gray);
+// }
 
 button, .highlight {
   border-radius: 5px;
   border-color: var(--primary);
   border: 0.1em solid var(--primary);
   padding: 0.5em 1em;
-
+  margin-right:10px;
   &:hover, &:focus, &:focus-within {
     border-color: var(--secondary);
   }
@@ -95,7 +95,7 @@ input[type="number"] {
 }
 
 button, input {
-  background: transparent;
+  background: white;
   color: inherit;
   cursor: pointer;
   font: inherit;
